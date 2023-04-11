@@ -1,5 +1,5 @@
 import {React, useContext, useState} from "react";
-import {Items} from "../contexts/Items.jsx"
+import {Items} from "../contexts/Items"
 
 const ItemInput = () => {
     const [item, setItem] = useState('');

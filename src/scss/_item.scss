@@ -2,9 +2,15 @@
     background-color: $color4;
     display: flex;
     justify-content: space-between;
-    justify-items: center;
+    align-items: center;
     @include size(100%, 2rem);
+    margin: 1rem 0rem;
     p {
+        font-size: 1.4rem;
+        font-weight: bold;
         color: $color3;
+    }
+    input {
+        margin: 0rem 1rem;
     }
 }

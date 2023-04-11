@@ -8,9 +8,9 @@ const ItemContainer = () => {
         <button onClick={deleteAllItems}>Borrar todos los items</button>
         {
             items.length > 0 ? 
-            <>{items.map(item => {
-                <Item key={`item-${item.id}`} item={item} />
-            })}</> 
+            <div className="items-container">{items.map((item) => {
+                return <Item key={`item-${item.id}`} item={item} />
+            })}</div> 
             : 
             <div className="item-container-no-item-message">
                 <p>No hay items en la lista!</p>

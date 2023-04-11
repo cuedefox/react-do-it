@@ -8,12 +8,16 @@
     align-items: center;
     button {
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         padding: .6rem;
         border-radius: .5rem;
         color: white;
         background-color: red;
     }
+}
+
+.items-container {
+    width: 100%;
 }
 
 .item-container-no-item-message {
