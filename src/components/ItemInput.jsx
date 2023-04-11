@@ -7,11 +7,10 @@ const ItemInput = () => {
     const sendItem = (e) => {
         e.preventDefault();
         if(item === '') {
-            console.log(items);
             alert('debe agregar un item para continuar');
         }else {
             let id = items.length > 0 ? items[items.length - 1].id + 1 : 1;
-            let itemToAdd = {title: item, id: id, check: false}
+            let itemToAdd = {title: item, id: id, check: false};
             addItem(itemToAdd);
             setItem('');
         }
