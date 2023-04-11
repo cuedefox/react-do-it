@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-
     list-style-type: none;
+    font-family: nunito;
 }
 
 $color1: #160F30;
@@ -13,4 +13,9 @@ $color4: #EAE7AF;
 @mixin size($a, $b) {
     width: $a;
     height: $b;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url('../assets/fonts/nunito.ttf');
 }

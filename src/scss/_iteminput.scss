@@ -9,5 +9,15 @@
     }
     .input-submit {
         width: 10vw;
+        background-color: $color2;
+        border: none;
+        color: $color4;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $color4;
+            color: $color2;
+        }
     }
 }
