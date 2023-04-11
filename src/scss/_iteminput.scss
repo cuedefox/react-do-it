@@ -1,0 +1,13 @@
+.item-input {
+    width: 40vw;
+    height: 2rem;
+    display: flex;
+    flex-flow: nowrap;
+    margin-bottom: 2rem;
+    .input-text {
+        width: 30vw;
+    }
+    .input-submit {
+        width: 10vw;
+    }
+}

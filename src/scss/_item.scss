@@ -1,0 +1,10 @@
+.item {
+    background-color: $color4;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    @include size(100%, 2rem);
+    p {
+        color: $color3;
+    }
+}
