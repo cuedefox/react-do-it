@@ -15,5 +15,5 @@ React Do It! es una aplicación de lista de tareas desarrollada en React. Permit
 # Deploy
 Puedes visitar React Do It haciendo click [Aquí](https://react-do-it-ecru.vercel.app/) o bien, ingresando a react-do-it-ecru.vercel.app desde tu navegador.
 # Rodrigo Vergara
-Visita este y otros proyectos en mi Portafolio: rodrigovergara.com.ar
+Visita este y otros proyectos en mi [Portafolio.](https://rodrigovergara.com.ar)
  
