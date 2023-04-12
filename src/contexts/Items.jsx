@@ -11,13 +11,13 @@ const ItemsProvider = ({children}) => {
 
     const addItem = (itemToAdd) => {
         setItems([...items, itemToAdd]);
-        localStorage.setItem('items', JSON.stringify(items));
+        localStorage.setItem('items', JSON.stringify([...items, itemToAdd]));
     }
 
     const deleteItem = (id) => {
         const itemsWithoutDeleted = items.filter(item => item.id !== id);
         setItems(itemsWithoutDeleted);
-        localStorage.setItem('items', JSON.stringify(items));
+        localStorage.setItem('items', JSON.stringify(itemsWithoutDeleted));
     }
 
     const checkItem = (id) => {
@@ -25,12 +25,12 @@ const ItemsProvider = ({children}) => {
         const index = itemsAndChecked.findIndex((item) => item.id === id);
         itemsAndChecked[index].check = !itemsAndChecked[index].check;
         setItems(itemsAndChecked);
-        localStorage.setItem('items', JSON.stringify(items));
+        localStorage.setItem('items', JSON.stringify(itemsAndChecked));
     }
 
     const deleteAllItems = () => {
         setItems([]);
-        localStorage.setItem('items', JSON.stringify(items));
+        localStorage.setItem('items', JSON.stringify([]));
     }
 
     return <Items.Provider

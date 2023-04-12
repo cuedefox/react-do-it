@@ -3,17 +3,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include size(100%, 2rem);
+    width: 100%;
     margin: 1rem 0rem;
     p {
         font-size: 1.4rem;
         font-weight: bold;
         color: $color3;
-        span {
-            text-decoration: line-through;
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;
     }
     input {
         margin: 0rem 1rem;
     }
+}
+
+.text-checked {
+    text-decoration: line-through;
+}
+
+.delete-item {
+    background-color: red;
+    border: none;
+    @include size(1.7rem, 1.7rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.check-item {
+    @include size(1.4rem, 1.4rem);
+    cursor: pointer;
 }
