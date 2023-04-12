@@ -26,3 +26,16 @@
         }
     }
 }
+
+@media screen and (max-width:1000px) {
+    .item-input {
+        width: 80vw;
+        margin-top: 6rem;
+        .input-text {
+            width: 60vw;
+        }
+        .input-submit {
+            width: 20vw;
+        }
+    }
+}

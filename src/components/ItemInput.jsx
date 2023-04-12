@@ -17,7 +17,7 @@ const ItemInput = () => {
     }
 
     return <form className="item-input" onSubmit={sendItem}>
-        <input className="input-text" type="text" value={item} onChange={e => setItem(e.target.value)} />
+        <input className="input-text" type="text" value={item} onChange={e => setItem(e.target.value)} placeholder="Añada una tarea" />
         <input className="input-submit" type="submit" value="Agregar" />
     </form>
 }

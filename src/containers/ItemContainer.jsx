@@ -13,7 +13,7 @@ const ItemContainer = () => {
             })}</div> 
             : 
             <div className="item-container-no-item-message">
-                <p>No hay items en la lista!</p>
+                <p>¡No hay tareas!</p>
             </div>
         }
     </div>
